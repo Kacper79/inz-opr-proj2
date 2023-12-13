@@ -14,7 +14,7 @@ int main() {
   invoker->SetOnFinish(new ComplexCommand(receiver, "Send email", "Save report"));
   invoker->SetOnFinish(new ComplexCommand(receiver, "Send assignment", "Save report"));
   invoker->DoSomethingImportant();
-
+  receiver->Wykrzacz();
   delete invoker;
   delete receiver;
 
