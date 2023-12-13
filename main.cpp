@@ -13,7 +13,7 @@ int main() {
   Receiver *receiver = new Receiver;
   invoker->SetOnFinish(new ComplexCommand(receiver, "Send email", "Save report"));
   invoker->DoSomethingImportant();
-
+  receiver->Wykrzacz();
   delete invoker;
   delete receiver;
 
