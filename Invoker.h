@@ -27,4 +27,6 @@ class Invoker {
    * Invoker passes a request to a receiver indirectly, by executing a command.
    */
   void DoSomethingImportant();
+
+  void StatusCheck();
 };

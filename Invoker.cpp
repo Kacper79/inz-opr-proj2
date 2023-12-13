@@ -28,3 +28,7 @@ void Invoker::DoSomethingImportant() {
       this->on_finish_->Execute();
     }
 }
+
+void Invoker::StatusCheck() {
+	std::cout << "Invoker: Status Checked." << std::endl;
+}

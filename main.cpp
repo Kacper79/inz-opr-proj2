@@ -9,12 +9,15 @@
 
 int main() {
   Invoker *invoker = new Invoker;
+  Invoker *secondInvoker = new Invoker;
+  secondInvoker->StatusCheck();
   invoker->SetOnStart(new SimpleCommand("Say Hi!"));
   Receiver *receiver = new Receiver;
   invoker->SetOnFinish(new ComplexCommand(receiver, "Send email", "Save report"));
   invoker->DoSomethingImportant();
 
   delete invoker;
+  delete secondInvoker;
   delete receiver;
 
   return 0;
