@@ -12,6 +12,7 @@ int main() {
   invoker->SetOnStart(new SimpleCommand("Say Hi!"));
   Receiver *receiver = new Receiver;
   invoker->SetOnFinish(new ComplexCommand(receiver, "Send email", "Save report"));
+  invoker->SetOnFinish(new ComplexCommand(receiver, "Send assignment", "Save report"));
   invoker->DoSomethingImportant();
 
   delete invoker;

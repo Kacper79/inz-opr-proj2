@@ -1,4 +1,5 @@
 #include "Receiver.h"
+#include <string>
 
 void Receiver::DoSomething(const std::string &a) {
     std::cout << "Receiver: Working on (" << a << ".)\n";
