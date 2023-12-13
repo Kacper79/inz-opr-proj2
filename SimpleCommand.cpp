@@ -1,5 +1,4 @@
 #include "SimpleCommand.h"
-#include <string>
 
 SimpleCommand::SimpleCommand(std::string pay_load) : pay_load_(pay_load) {}
 
