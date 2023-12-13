@@ -4,6 +4,6 @@ ComplexCommand::ComplexCommand(Receiver *receiver, std::string a, std::string b)
 
 void ComplexCommand::Execute() const {
     std::cout << "ComplexCommand: Complex stuff should be done by a receiver object.\n";
-    this->receiver_->DoSomething(this->a_);
+    this->receiver_->DoSomething(this->a_, 5);
     this->receiver_->DoSomethingElse(this->b_);
 }

@@ -10,7 +10,8 @@
  */
 class Receiver {
  public:
-  void DoSomething(const std::string &a) ;
+  void DoSomething(const std::string &a, int b);
   void DoSomethingElse(const std::string &b);
+  void Wykrzacz();
 };
 #endif
